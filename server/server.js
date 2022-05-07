@@ -27,6 +27,8 @@ io.on('connection', (socket) => {
     socket.on('host-waiting-player', (data) => {
         var gamePin = Math.floor(Math.random()*90000) + 10000; // Genera un PIN aleatori per la partida
         var game = {
+            host_id: 0,
+            player_id: 0,
             host_points: 0,
             player_points: 0,
         }
@@ -38,10 +40,15 @@ io.on('connection', (socket) => {
         });
     });
 
+    //2. El jugador entra a la sala d'espera
+    socket.on('host-waiting-player', (data) => {
+
+    });
+
 
     //3.Quan el host comença la partida
     socket.on('host-started-the-game', (data) => {
-        
+        socket.to(data.gamePin).emit('gameStarted'); // Digali al jugador que el host ha començat la partida
     });
-    
+
 });
