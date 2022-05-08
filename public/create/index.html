@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Crear partida</title>
+        <link rel="stylesheet" href = "../css/create.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    </head>
+    <body>
+        <a id = "back"href = "../">Back</a>
+        <h1 id = "title">Començar una partida de pedra, paper, estisores</h1>
+        <h4 id = "subtitle"> Introdueix l'identificador de la partida:</h4>    
+        <div class="form-field">
+            <input id = "pin" type="number" name="pin"/>
+        </div>
+        <br>
+        <div class="form-field">
+            <button id = "createButton" onclick="onCreateClick()">Crear partida</button>
+        </div>
+        <script src = "../socket.io/socket.io.js"></script>
+        <script src = "../js/create.js"></script>
+    </body>
+</html>
