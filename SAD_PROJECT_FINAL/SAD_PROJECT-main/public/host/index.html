@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Host | Pedra, Paper, Estisores</title>
+        <link rel = "stylesheet" href = "../css/host.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+    </head>
+    <body>
+        <button id = "cancel" onclick = "cancel()">Cancelar</button>
+        <h2 id = "title">Accedeix a la partida amb aquest pin: </h2>
+        <h1 id = "gamePinText"></h1>
+        <div class="form-field">
+            <label id = "label">Nickname</label>
+            <input id = "name" type = "text" name="name" autofocus required/>
+        </div>
+        <div class="form-field">
+            <label id = "label">Punts per guanyar:</label>
+            <input id = "points" type="number" name="points"/>
+        </div>
+        <h3 id = "waitingLabel"></h3>
+        <span class="error" id="errorname"></span></p>
+        <button id = 'start' onclick = "startGame()" disabled>Començar partida</button>
+        <br>
+        <br>
+        <script src = "../socket.io/socket.io.js"></script>
+        <script src = "../js/libs/myUrlParser.js"></script>
+        <script src = "../js/host.js"></script>
+    </body>
+</html>

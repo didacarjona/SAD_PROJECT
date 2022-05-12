@@ -1,0 +1,40 @@
+html, body { height: 90%; padding: 0; margin: 0; }
+button{
+    width: 50%; height: 50%; float: left;
+}
+
+body {
+    background-color: orange;
+}
+
+img { background-color: transparent; }
+
+#stats{
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+.column {
+    width: 30%;
+    text-align:center;
+    margin:0 auto;
+}
+
+.row{
+    display: flex;
+}
+
+#nameText,#scoreText{
+    font-family: 'Raleway', sans-serif;
+    padding: 0px 10px;
+}
+
+
+#message{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 35px;
+}
